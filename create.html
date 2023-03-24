@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="create.css">
+    <title>Item DEtails</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="container">
+                <div class="logo-image"> 
+                 <a href="index.html"><img src="./images/logo.png" /></a>
+                </div>
+                <nav class="navbar fixed-top">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a> 
+                            Explore
+                        </a>
+                    </li>
+                    <li>
+                        <a href="item-details.html">
+                            Item Detils
+                        </a>
+                    </li>
+                    <li>
+                        <a href="autor.html">
+                            Author
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active">
+                            Create Your
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+        <section class="nft-market">
+            <img class="nft-market-back" src="./images/heading-bg.jpg" />
+            <div class="container">
+                <div class="nft-market-text">
+                    <p>Liberty NFT Market</p>
+                    <h2>CREATE YOUR NFT NOW.</h2>
+                    <span>Home > <a>Item Details</a></span>
+                </div>
+                <div class="nft-market-btn">
+                    <a>Explore Our Items</a>
+                    <a>Create Your NFT</a>
+                </div>
+            </div>            
+        </section>
+
+        <!--your item-->
+
+        <section class="your-item">
+        <img class="your-item-back" src="./images/dark-bg.jpg" /> 
+            <div class="container">
+                <div class="your-item-title">
+                    <div class="line-dec"></div>
+                    <h2>Apply For <em>Your Item</em> Here.</h2>
+                </div>
+                <form action method="post" id="contact">
+                    <div class="row">
+                        <fieldset>
+                            <label for="title">Item Title</label>
+                            <input type="title" name="title" id="title" placeholder="Ex. Lyon King" autocomplete="on" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="description">Description For Item</label>
+                            <input type="description" name="description" id="description" placeholder="Give us your idea" autocomplete="on" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="username">Your Username</label>
+                            <input type="username" name="username" id="username" placeholder="Ex. @alansmithee" autocomplete="on" required>
+                        </fieldset>
+                    </div>
+
+                    <div class="row-2">
+                        <fieldset>
+                            <label for="price">Price Of Item</label>
+                            <input type="price" name="price" id="price" placeholder="Price depends on quality. Ex. 0.06 ETH" autocomplete="on" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="royalities">Royalties</label>
+                            <input type="royalities" name="royalities" id="royalities" placeholder="Common royalties 1-25%" autocomplete="on" required>
+                        </fieldset>
+                    </div>
+
+                    <div class="row-3">
+                        <fieldset>
+                            <label for="file">Your File</label>
+                            <input type="file" id="file" name="myfiles[]" multiple />
+                        </fieldset>
+
+                        <fieldset>
+                            <button type="submit" id="form-submit" class="orange-button">Submit Your Applying</button>
+                          </fieldset>
+                    </div>
+                </form>
+                <!--preview-->
+                <div class="preview">
+                    <div class="preview-title">
+                        <div class="line-dec"></div>
+                        <h2>This Is <em>Your Item</em> Preview.</h2>
+                    </div>
+                    <div class="preview-info">
+                        <div class="preview-info-img">
+                            <img src="./images/create-yours.jpg" />
+                        </div>
+                        <div class="preview-info-text">
+                            <h2>Dolores Haze Westworld Eye</h2>
+                            <span class="author">
+                                <img src="./images/author-02.jpg" />
+                                <h2>Kataleya Smithee<br><a href="#">@kataleey</a></h2>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet, consectetu dipiscingei elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="preview-info-text-span">
+                                <span class="bid">
+                                Current Bid
+                                <br>
+                                <strong>6.06 ETH</strong>
+                                <br>
+                                <em>($8,025.50)</em>
+                            </span>
+        
+                            <span class="bid">
+                                Owner
+                                <br>
+                                <strong>David Walker</strong>
+                                <br>
+                               <em>(@davidwalker)</em>
+                            </span>
+        
+                            <span class="bid">
+                                Ends In
+                                <br>
+                                <strong>3D 05H 20M 58S</strong>
+                                <br>
+                                <em>(January 22nd, 2021)</em>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+         <!--footer-->
+        
+    <footer>
+        <p>Copyright © 2022 Liberty NFT Marketplace Co., Ltd. All rights reserved.    Designed by TemplateMo</p>
+    </footer>
+</body>
+</html>

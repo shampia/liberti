@@ -1,0 +1,449 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: unset;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1160px;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 28px 0px;
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    background-color: white ;
+    border-radius: 60px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    position: sticky;
+    position: sticky;
+    top: 0;
+}
+
+header nav ul li {
+    padding: 0px 15px;
+    
+}
+
+header nav ul li a {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+header nav ul li a.active{
+    color: #fff;
+    background-color: #7453fc; 
+    border-radius: 60px;
+    padding: 3px 8px 3px 8px;   
+}
+
+header nav ul li a:hover{
+    background-color: #7453fc;
+    color: #fff;
+    border-radius: 60px;
+    padding: 3px 8px 3px 8px;
+}
+
+header nav {
+    position: relative;
+}
+
+
+
+section.nft-market{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+section.nft-market .nft-market-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.nft-market .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-market-text p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.nft-market-text h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    text-transform: uppercase; 
+    max-width: 670px;   
+}
+
+.nft-market-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+
+
+.nft-market-text span{
+    margin-left: auto;
+    margin-right: auto;
+   color: #8a75da;
+   font-size: 15px;
+}
+
+.nft-market-btn{
+    margin-top: 20px;
+}
+
+.nft-market-btn a:nth-child(1){
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.nft-market-btn a:nth-child(1)::after{ 
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.nft-market-btn a:nth-child(1):hover{
+    background-color: #fff;
+    color: #7453fc;
+}
+
+.nft-market-btn a{
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.nft-market-btn a::after{ 
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.nft-market-btn a:hover{
+    color: white        ;
+    background-color: #7453fc;
+}
+
+/* your item */
+
+section.your-item .your-item-back{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.your-item .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.your-item-title .line-dec{
+    width: 100px;
+    height: 2px;
+    background-color: #7453fc;
+    margin: 150px auto 30px auto;
+}
+
+.your-item-title h2{
+    text-align: center;
+}
+
+.your-item-title em{
+    font-style: normal;
+    color: #7453fc;
+}
+
+.row{
+    display: flex;
+    gap: 60px;
+}
+
+.row-2{
+    display: flex;
+}
+
+.row-3{
+    display: flex;
+    gap: 60px;
+}
+
+#contact{
+    background-color: #37393c;
+    border-radius: 20px;
+    padding: 60px 30px;
+    margin-bottom: 120px;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#contact label {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#contact input{
+    width: 100%;
+    height: 46px;
+    text-align: left;
+    padding: 10px 15px;
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #afafaf;
+    border-radius: 60px;
+}
+
+#contact input#price{
+    width: 500px;
+}
+
+#contact input#royalities{
+    width: 500px;
+}
+
+#contact input#file {
+    padding: 8px 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+}
+
+
+#contact button {
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 270px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#contact button::after{
+    content: '';
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+/*preview*/
+
+.preview{
+    margin-top: 150px;
+}
+
+.preview-title .line-dec{
+    width: 100px;
+    height: 2px;
+    background-color: #7453fc;
+    margin: 0 auto 30px auto;
+}
+
+.preview-title h2{
+    text-align: center;
+}
+
+.preview-title em{
+    font-style: normal;
+    color: #7453fc;
+}
+
+.preview-info{
+    margin-top: 50px;
+    display: flex;
+}
+
+.preview-info-img img{
+   
+    border-radius: 20px;
+}
+
+.preview-info-text{
+    margin-left: 45px;
+}
+
+.preview-info-text h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.preview-info-text span.author{
+    display:  flex;
+    gap: 20px;
+}
+
+.preview-info-text span.author img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+.preview-info-text span.author h2{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    
+}
+
+.preview-info-text span.author h2 a{
+    color: #7453fc;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.preview-info-text p{
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.preview-info-text-span{
+    display: flex;
+    gap: 50px;
+}
+
+.preview-info-text-span span.bid{
+    line-height: 35px;
+}
+
+.preview-info-text-span span.bid strong{
+    font-size: 20px;
+    color: #7453fc;
+}
+
+.preview-info-text-span span.bid em{
+    font-style: normal;
+    color: #afafaf;
+}
+
+
+/*footer*/
+
+footer{
+    background: rgb(125,90,254);
+    background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
+    text-align: center;
+    padding: 25px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+footer p{
+    color: #fff;
+}

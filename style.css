@@ -1,0 +1,704 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: unset;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1160px;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 28px 0px;
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    background-color: white ;
+    border-radius: 60px;
+    max-width: 1240px;
+   margin-left: auto;
+   margin-right: auto;
+    
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    position: sticky;
+    position: sticky;
+    top: 0;
+}
+
+header nav ul li {
+    padding: 0px 15px;
+    
+}
+
+header nav ul li a {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+header nav ul li a.active{
+    color: #fff;
+    background-color: #7453fc; 
+    border-radius: 60px;
+    padding: 3px 8px 3px 8px;   
+}
+
+header nav ul li a:hover{
+    background-color: #7453fc;
+    color: #fff;
+    border-radius: 60px;
+    padding: 3px 8px 3px 8px;
+}
+
+header nav {
+    position: relative;
+}
+
+
+
+section.liberty-nft-market{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+section.liberty-nft-market .liberty-nft-market-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.liberty-nft-market .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.liberty-nft-market-text h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.liberty-nft-market-text h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    text-transform: uppercase; 
+    max-width: 665px;   
+}
+
+.liberty-nft-market-text p{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    max-width: 615px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.btn a:nth-child(1){
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn a:nth-child(1)::after{ 
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.btn a:nth-child(1):hover{
+    background-color: #7453fc;
+    color: white;
+}
+
+.btn a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc   ;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn a::after{ 
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.btn a:hover{
+    color: #7453fc;
+    background-color: white;
+}
+
+
+swiper-container {
+    width: 50%;
+    height: 50%;
+  }
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+} 
+
+  /*categori*/
+
+section.categori{
+    position: relative;
+    width: 100%;
+    height: 170vh;
+}
+
+section.categori .categori-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.categori .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.categori-title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+
+.categori-title h2{
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.categori-title em{
+    color: #7453fc;
+    font-style: normal;
+}
+
+.line-dec{
+    width: 100px;
+    height: 2px;
+    background-color: #7453fc;
+    margin: 0px auto 30px auto;
+}
+
+.categories{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.categories-item{
+    border-radius: 25px;
+    background-color: #282b2f;
+    border: 1px solid #404245;  
+    padding: 30px;
+    text-align: center;
+}
+
+.categories-item h2{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.icon{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.icon img{
+    padding: 15px 15px;
+}
+
+.categories .categories-item .icon-button a {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #fff;
+    color: #7453fc;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: -23px;
+    transform: translateX(-23px);
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .categories .categories-item .icon-button a:hover {
+    background-color: #7453fc;
+    color: #fff;
+  }
+  
+  .categories .categories-item:hover .icon-button a {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+.collection-title{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collection-title h2{
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.collection-title em{
+    color: #7453fc;
+    font-style: normal;
+}
+
+.clollections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top:  100px  ;
+}
+
+.colections-item-img img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.colection-item-info{
+    border: 1px solid #404245;
+    background-color: #282b2f;
+    border-radius: 0px 0px 25px 25px;
+    padding: 30px;  
+}
+
+.colection-item-info h2{
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.colection-item-info span{
+    color: #fff;
+    display: inline-block;
+    width: 48%;
+    font-size: 15px;
+}
+
+.colection-item-info span.category{
+    text-align: right;
+}
+
+.main-button{
+    margin-top: 20px;
+    margin-bottom: -60px;
+}
+
+.main-button a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 100px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-button a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.main-button a:hover{
+    color: #7453fc;
+    background-color: #fff;
+}
+
+/*nft and put*/
+
+section.craete-nft{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section.craete-nft .craete-nft-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.craete-nft .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.craete-nft-title{
+    margin-top: 50px;
+}
+
+.craete-nft-title h2{
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.line-decs{
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto 30px auto;
+    margin-left: 0;
+}
+
+.craete-nft-btn {
+    text-align: right;
+}
+
+.craete-nft-btn a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.craete-nft-btn a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.craete-nft-btn a:hover{
+    color: #7453fc;
+    background-color: #fff;
+}
+
+.create-nfts{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.create-nfts-item{
+    margin-left: 30px;
+}
+
+.create-nfts-item:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.create-nfts-item h2{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.create-nfts-item p{
+    margin-right: 30px;
+      
+}
+
+.create-nfts-item a{
+    color: #3CF;
+}
+
+/*item*/
+
+
+section.item{
+    background-image: url(../images/dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 120px 0px;
+    position: relative;
+}
+
+section.item .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title{
+    margin-top: 100px;
+}
+
+.item-title h2{
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.item-title em{
+    color: #7453fc;
+    font-style: normal;
+    font-weight: 700;
+}
+
+section.item .container .item-title .line-dec{
+    margin-left: 0;
+}
+
+.item-btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.item-btn button{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.item-btn button:hover{
+    background-color: #7453fc;
+}
+
+.item-btn button.active{
+    background-color: #7453fc
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.items-item{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    max-width: 550px;
+}
+
+.left-img img{
+    border-radius: 20px;
+    min-width: 195px;
+}
+
+.rights-container{
+    margin-left: 30px;
+    width: 100%;
+}
+
+.rights-container h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.autor{
+    display: flex;
+    gap: 20px;
+}
+
+.autor img{
+    border-radius: 50%;
+}
+
+.autor h3{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.autor a{
+    color: #7453fc;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.rights-container .line-dec{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.rights-container-span{
+    display: flex;
+    gap: 50px;
+}
+
+.bid{
+    line-height: 35px;
+}
+
+.ends{
+    text-align: right;
+    float: right;
+    line-height: 35px;
+}
+
+.rights-container-btn a{
+    font-size: 15px;
+    font-weight: 700;
+    color: #7453fc;
+    border-bottom: 1px solid #7453fc;
+}
+
+.rights-container-btn{
+    margin-top: 30px;
+}
+
+/*footer*/
+
+footer{
+    background: rgb(125,90,254);
+    background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
+    text-align: center;
+    padding: 25px 0px;
+}
+
+footer p{
+    color: #fff;
+}

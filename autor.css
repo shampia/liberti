@@ -1,0 +1,600 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: unset;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1160px;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 28px 0px;
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    background-color: white ;
+    border-radius: 60px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    position: sticky;
+    position: sticky;
+    top: 0;
+}
+
+header nav ul li {
+    padding: 0px 15px;
+    
+}
+
+header nav ul li a {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+header nav ul li a.active{
+    color: #fff;
+    background-color: #7453fc; 
+    border-radius: 60px;
+    padding: 3px 8px 3px 8px;   
+}
+
+header nav ul li a:hover{
+    background-color: #7453fc;
+    color: #fff;
+    border-radius: 60px;
+    padding: 3px 8px 3px 8px;
+}
+
+header nav {
+    position: relative;
+}
+
+
+
+section.nft-market{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+section.nft-market .nft-market-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.nft-market .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-market-text p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.nft-market-text h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    text-transform: uppercase; 
+    max-width: 670px;   
+}
+
+.nft-market-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+
+
+.nft-market-text span{
+    margin-left: auto;
+    margin-right: auto;
+   color: #8a75da;
+   font-size: 15px;
+}
+
+.nft-market-btn{
+    margin-top: 20px;
+}
+
+.nft-market-btn a:nth-child(1){
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.nft-market-btn a:nth-child(1)::after{ 
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.nft-market-btn a:nth-child(1):hover{
+    background-color: #fff;
+    color: #7453fc;
+}
+
+.nft-market-btn a{
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.nft-market-btn a::after{ 
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.nft-market-btn a:hover{
+    color: white        ;
+    background-color: #7453fc;
+}
+
+/*malenie smith*/
+
+section.melanie-smith .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+section.melanie-smith .melanie-smith-back{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.melanie-smith-profile{
+    display: flex;
+    margin-top: 150px;
+    gap: 220px;
+}
+
+.melanie-smith-profile-avatar{
+    display: flex; 
+    gap: 30px;
+}
+
+.melanie-smith-profile-avatar img{
+    border-radius: 50%;
+}
+
+.melanie-smith-profile-avatar h2{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 195px;
+}
+
+.melanie-smith-profile-avatar h2 a{
+    font-size: 20px;
+    color: #7453fc;
+}
+
+.melanie-smith-profile-right{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.melanie-smith-profile-right-items{
+    display: flex;
+    gap: 50px;
+}
+
+.melanie-smith-profile-right-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.melanie-smith-profile-right-item i{
+    color: #7453fc;
+    font-size: 22px;
+}
+
+.melanie-smith-profile-right-item p{
+    margin-top: 10px;
+    color: #7453fc;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.melanie-smith-profile-right-item p em{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.melanie-smith-profile-right-text {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+
+}
+
+.melanie-smith-profile-right-text h2{
+    font-size: 20px;
+    color: #afafaf;
+    margin-top: 5px;
+}
+
+.melanie-smith-profile-right-text a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.melanie-smith-profile-right-text a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.melanie-smith-profile-right-text a:hover{
+    color: #7453fc;
+    background-color: #fff;
+}
+
+/*malenie smith item*/
+
+.melanie-smith-item{
+    margin-top: 200px;
+}
+
+.melanie-smith-item-title .line-dec{
+    width: 100px;
+    height: 2px;
+    background-color: #7453fc;
+}
+
+.melanie-smith-item-title h2{
+    margin-top: 20px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.melanie-smith-item-title h2 em{
+    color: #7453fc;
+    font-style: normal;
+}
+
+.melanie-smith-items{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.melanie-smith-items-item{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 52px;
+}
+
+.melanie-smith-items-item-autor{
+    display: flex;
+    justify-content: center;
+}
+
+.melanie-smith-items-item-autor img{
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+.melanie-smith-items-item-img img{
+    margin-top: -32px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.melanie-smith-items-item-text h2{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.melanie-smith-items-item-text .line-dec{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 30px 0px;
+}
+
+.spans{
+    display: flex;
+    gap: 60px;
+}
+
+.melanie-smith-items-item-text .spans span{
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.melanie-smith-items-item-btn{
+    margin-top: 20px;
+    margin-bottom: -60px;
+    text-align: center;
+}
+
+.melanie-smith-items-item-btn a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.melanie-smith-items-item-btn a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.melanie-smith-items-item-btn a:hover{
+    background-color: #fff;
+    color: #7453fc;
+    border: 1px solid #fff;
+}
+
+
+/*creat nft*/
+
+section.craete-nft{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section.craete-nft .craete-nft-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.craete-nft .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.craete-nft-title{
+    margin-top: 50px;
+}
+
+.craete-nft-title h2{
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.line-decs{
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto 30px auto;
+    margin-left: 0;
+}
+
+.craete-nft-btn {
+    text-align: right;
+}
+
+.craete-nft-btn a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.craete-nft-btn a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.craete-nft-btn a:hover{
+    color: #7453fc;
+    background-color: #fff;
+}
+
+.icon{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.icon img{
+    padding: 15px 15px;
+}
+
+.create-nfts{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.create-nfts-item{
+    margin-left: 30px;
+}
+
+.create-nfts-item:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.create-nfts-item h2{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.create-nfts-item p{
+    margin-right: 30px;
+      
+}
+
+.create-nfts-item a{
+    color: #3CF;
+}
+
+
+/*footer*/
+
+footer{
+    background: rgb(125,90,254);
+    background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
+    text-align: center;
+    padding: 25px 0px;
+}
+
+footer p{
+    color: #fff;
+}
