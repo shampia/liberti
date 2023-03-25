@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>liberti</title>
 </head>
 <body>
     <div class="container">
         <header id="header">
                 <div class="logo-image"> 
-                 <a href="index.html"><img src="./images/logo.png" /></a>
+                 <a href="index.html"><img src="images/logo.png" /></a>
                 </div>
                 <nav class="navbar fixed-top">
                 <ul>
@@ -46,7 +44,7 @@
         </header>
     </div>
     <section class="liberty-nft-market">
-        <img class="liberty-nft-market-back" src="images/banner-bg.jpg" />
+        <img class="liberty-nft-market-back" src="./images/banner-bg.jpg" />
         <div class="container">
             <div class="liberty-nft-market-text">
                 <h3>Liberty NFT Market</h3>
@@ -63,14 +61,16 @@
             </div>
 
           
-            <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true" css-mode="true">
-                <swiper-slide>
-                    <img src="./images/banner-01.png" >
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./images/banner-02.png" >
-                </swiper-slide>
-            </swiper-container>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/banner-01.png" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner-02.png" >
+                    </div>
+                </div>
+            </div>
             
         </div>
     </section>
@@ -466,10 +466,6 @@
     <footer>
         <p>Copyright © 2022 Liberty NFT Marketplace Co., Ltd. All rights reserved.    Designed by TemplateMo</p>
     </footer>
-
-    
     
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-<script src="script.js"></script>
 </html>

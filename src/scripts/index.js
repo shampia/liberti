@@ -1,3 +1,8 @@
+import Swiper from 'swiper'
+import '../styles/index.scss'
+
+const swiper = new Swiper('.swiper', {})
+
 const itemButtons = document.querySelectorAll('section.item .item-btn button')
 const items = document.querySelectorAll('section.item .items .items-item')
 
