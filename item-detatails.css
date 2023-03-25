@@ -17,6 +17,9 @@ a {
     text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+}
 
 .container {
     margin: auto;
@@ -378,24 +381,28 @@ form button:hover{
 /*current*/
 
 .current-page{
+    
+}
+
+.current-page .container {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
 .current-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 150px;
     display: flex;
-    gap: 700px;
-    margin-left: calc((100vw - 1160px) / 2);
-    margin-right: calc((100vw - 1160px) / 2);
 }
 
 .current-title h2{
     background-color: #7453fc;
     display: inline-block;
     font-size: 20px;
-    padding: 12px 3px;
+    padding: 12px 10px;
     border-radius: 50px;
 }
 
